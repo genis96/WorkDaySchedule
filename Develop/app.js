@@ -12,69 +12,71 @@ let now = new Date().getHours();
 
 
 function colorChanges() {
-    if (now > 8) {
-        $("#btn8").addClass("past");
-      } else if (now >= 8 && now < 9) {
-        $("#btn8").addClass("present");
-      } else if (now < 8) {
-        $("#btn8").addClass("future");
+    //can i store the nums in a let & just use an if statement once..?
+    let x = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
+    if (now > x) {
+        $("#mainBtn").addClass("past");
+      } else if (now >= x && now < x) {
+        $("#mainBtn").addClass("present");
+      } else if (now < x) {
+        $("#mainBtn").addClass("future");
       }
-      if (now > 9) {
-        $("#btn9").addClass("past");
-      } else if (now >= 9 && now < 10) {
-        $("#btn9").addClass("present");
-      } else if (now < 9) {
-        $("#btn9").addClass("future");
-      }
-      if (now > 10) {
-        $("#btn10").addClass("past");
-      } else if (now >= 10 && now < 11) {
-        $("#btn10").addClass("present");
-      } else if (now < 10) {
-        $("#btn10").addClass("future");
-      }
-      if (now > 11) {
-        $("#btn11").addClass("past");
-      } else if (now >= 11 && now < 12) {
-        $("#btn11").addClass("present");
-      } else if (now < 11) {
-        $("#btn11").addClass("future");
-      }
-      if (now > 12) {
-        $("#btn12").addClass("past");
-      } else if (now >= 12 && now < 13) {
-        $("#btn12").addClass("present");
-      } else if (now < 12) {
-        $("#btn12").addClass("future");
-      }
-      if (now > 13) {
-        $("#btn1").addClass("past");
-      } else if (now >= 13 && now < 14) {
-        $("#btn1").addClass("present");
-      } else if (now < 13) {
-        $("#btn1").addClass("future");
-      }
-      if (now > 14) {
-        $("#btn2").addClass("past");
-      } else if (now >= 14 && now < 15) {
-        $("#btn2").addClass("present");
-      } else if (now < 14) {
-        $("#btn2").addClass("future");
-      }
-      if (now > 15) {
-        $("#btn3").addClass("past");
-      } else if (now >= 15 && now < 16) {
-        $("#btn3").addClass("present");
-      } else if (now < 15) {
-        $("#btn3").addClass("future");
-      }
-      if (now > 16) {
-        $("#btn4").addClass("past");
-      } else if (now >= 16 && now < 17) {
-        $("#btn4").addClass("present");
-      } else if (now < 16) {
-        $("#btn4").addClass("future");
-      }
+    //   if (now > 9) {
+    //     $("#btn9").addClass("past");
+    //   } else if (now >= 9 && now < 10) {
+    //     $("#btn9").addClass("present");
+    //   } else if (now < 9) {
+    //     $("#btn9").addClass("future");
+    //   }
+    //   if (now > 10) {
+    //     $("#btn10").addClass("past");
+    //   } else if (now >= 10 && now < 11) {
+    //     $("#btn10").addClass("present");
+    //   } else if (now < 10) {
+    //     $("#btn10").addClass("future");
+    //   }
+    //   if (now > 11) {
+    //     $("#btn11").addClass("past");
+    //   } else if (now >= 11 && now < 12) {
+    //     $("#btn11").addClass("present");
+    //   } else if (now < 11) {
+    //     $("#btn11").addClass("future");
+    //   }
+    //   if (now > 12) {
+    //     $("#btn12").addClass("past");
+    //   } else if (now >= 12 && now < 13) {
+    //     $("#btn12").addClass("present");
+    //   } else if (now < 12) {
+    //     $("#btn12").addClass("future");
+    //   }
+    //   if (now > 13) {
+    //     $("#btn1").addClass("past");
+    //   } else if (now >= 13 && now < 14) {
+    //     $("#btn1").addClass("present");
+    //   } else if (now < 13) {
+    //     $("#btn1").addClass("future");
+    //   }
+    //   if (now > 14) {
+    //     $("#btn2").addClass("past");
+    //   } else if (now >= 14 && now < 15) {
+    //     $("#btn2").addClass("present");
+    //   } else if (now < 14) {
+    //     $("#btn2").addClass("future");
+    //   }
+    //   if (now > 15) {
+    //     $("#btn3").addClass("past");
+    //   } else if (now >= 15 && now < 16) {
+    //     $("#btn3").addClass("present");
+    //   } else if (now < 15) {
+    //     $("#btn3").addClass("future");
+    //   }
+    //   if (now > 16) {
+    //     $("#btn4").addClass("past");
+    //   } else if (now >= 16 && now < 17) {
+    //     $("#btn4").addClass("present");
+    //   } else if (now < 16) {
+    //     $("#btn4").addClass("future");
+    //   }
     console.log(this)
 }
 
@@ -85,10 +87,11 @@ function timeAmPm() {
     let saveBtn = document.querySelector('#tmainBtn');
 
     $(saveBtn).on("click", updateUI);
-
     userOutput.text = localStorage.getItem("content");
     userInput.val = localStorage.getItem("content");
 }
+
+function updateUI() {}
 
 
 
