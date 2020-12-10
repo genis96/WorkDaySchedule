@@ -79,7 +79,9 @@ function colorChanges() {
 }
 
 function timeAmPm() {
-    let userInput = document.querySelector('#time')
+    let userInput = document.querySelector('#text-input-8');
+    let userOutput = document.querySelector('#text-input-8');
+    let saveBtn = document.querySelector('#text-input-8');
 }
 
 
