@@ -81,7 +81,12 @@ function colorChanges() {
 function timeAmPm() {
     let userInput = document.querySelector('#text-input-8');
     let userOutput = document.querySelector('#text-input-8');
-    let saveBtn = document.querySelector('#text-input-8');
+    let saveBtn = document.querySelector('#tmainBtn');
+
+    $(saveBtn).on("click", updateUI);
+
+    userOutput.text = localStorage.getItem("content");
+    userInput.val = localStorage.getItem("content");
 }
 
 
