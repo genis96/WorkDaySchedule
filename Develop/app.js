@@ -1,7 +1,7 @@
-$(document).ready(function() {
+  window.onload = () => { 
     timeAmPm();
     colorChanges();
-})
+}
 
 var currentDay = moment().format("dddd LL");
 $("#currentDay").append(currentDay);
@@ -12,6 +12,8 @@ let now = new Date().getHours();
 
 
 function colorChanges() {
+    if (now > 8) {
+        $("#btn8").addClass("past");
 
     console.log(this)
 }
