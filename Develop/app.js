@@ -79,6 +79,7 @@ function colorChanges() {
 }
 
 function timeAmPm() {
+    // test this out to see if i can label them all under one ID 
     let userInput = document.querySelector('#text-input-8');
     let userOutput = document.querySelector('#text-input-8');
     let saveBtn = document.querySelector('#tmainBtn');
