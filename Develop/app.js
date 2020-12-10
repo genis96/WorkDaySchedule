@@ -1,41 +1,18 @@
 $(document).ready(function() {
-    let present = moment().format("dddd, MMMM Do");
-    let now = moment().format("H A");
+    timeAmPm();
+    colorChanges();
+})
 
-    let myDay = [
-    {
-        time: "8am", event: ""
-    },
-    {
-        time: "9am", event: ""
-    },
-    {
-        time: "10am", event: ""
-    },
-    {
-        time: "11am", event: ""
-    },
-    {
-        time: "12am", event: ""
-    },
-    {
-        time: "1am", event: ""
-    },
-    {
-        time: "2am", event: ""
-    },
-    {
-        time: "3am", event: ""
-    },
-    {
-        time: "4am", event: ""
-    },
-    console.log(present)
-]})
+var currentDay = moment().format("dddd LL");
+$("#currentDay").append(currentDay);
+var currTime = moment().format("LT");
+$("#currTime").append(currTime);
+
+let now = new Date().getHours();
 
 
 /**
- * use moment.js for time and date - use jquery 
+ * use moment.js for time and date 
  * grab selectors from html 
  * use the moment.js format from the docs inside a jquery ready function. 
  * it must display the time and the day 
