@@ -84,13 +84,16 @@ function timeAmPm() {
     let userInput = document.querySelector('#text-input-8');
     let userOutput = document.querySelector('#text-input-8');
     let saveBtn = document.querySelector('#tmainBtn');
+    
+    $(saveBtn).on("click", updateUI);
+    function updateUI() {
+        localStorage.setItem("content", userInput.val);
+        userOutput.textContent = userInput.val;
+    }
 
     userOutput.text = localStorage.getItem("content");
     userInput.val = localStorage.getItem("content");
-
-    $(saveBtn).on("click", updateUI);
-    function updateUI() {
-    }
+    
 }
 
 
