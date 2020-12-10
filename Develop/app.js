@@ -1,10 +1,18 @@
-$(document).ready(function () {
-    $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
-    $(".save").on("click", function() {
-        console.log(this);
+$(document).ready(function() {
+    //moment.js
+    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+    //save btn for the user text input + time
+    $("save").on("click", function() {
+        //Get the current value of the first element in the set of matched elements or set the value of every matched element. - .val() 
+        let txt = $(this).siblings(".text-input").val();
+        let time = $(this).parent().attr("id");
+        localStorage.setItem(time, txt);
         
+
+        //getItem for the localStorage for each hour 
     })
 })
+
 
 
 
