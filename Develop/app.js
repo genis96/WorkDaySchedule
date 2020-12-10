@@ -1,19 +1,37 @@
 $(document).ready(function() {
-    //moment.js
-    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
-    //save btn for the user text input + time
-    $("save").on("click", function() {
-        //Get the current value of the first element in the set of matched elements or set the value of every matched element. - .val() 
-        let txt = $(this).siblings(".text-input").val();
-        let time = $(this).parent().attr("id");
-        localStorage.setItem(time, txt);
-        
+    let present = moment().format("dddd, MMMM Do");
+    let now = moment().format("H A");
 
-        //getItem for the localStorage for each hour 
-    })
-})
-
-
+    let myDay = [
+    {
+        time: "8am", event: ""
+    },
+    {
+        time: "9am", event: ""
+    },
+    {
+        time: "10am", event: ""
+    },
+    {
+        time: "11am", event: ""
+    },
+    {
+        time: "12am", event: ""
+    },
+    {
+        time: "1am", event: ""
+    },
+    {
+        time: "2am", event: ""
+    },
+    {
+        time: "3am", event: ""
+    },
+    {
+        time: "4am", event: ""
+    },
+    console.log(present)
+]})
 
 
 /**
@@ -26,4 +44,31 @@ $(document).ready(function() {
  * use local storage (getItem)
  * must change the color of the user input box - to indicate whether it is in the past, present, or future
  * must addClass, and remove 
+ * 
+ * 
+ * // $(document).ready(function() {
+//     //moment.js
+//     $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+//     //save btn for the user text input + time
+//     $("save").on("click", function() {
+//         //Get the current value of the first element in the set of matched elements or set the value of every matched element. - .val() 
+//         let txt = $(this).siblings("#text-input").val();
+//         let time = $(this).parent().attr("id");
+//         localStorage.setItem(time, txt);
+//         //getItem for the localStorage for each hour 
+//     })  
+
+// })
+ *     $("#h8 .text-input").val(localStorage.getItem("hour8"));
+    $("#h9 .text-input").val(localStorage.getItem("hour9"));
+    $("#h10 .text-input").val(localStorage.getItem("hour10"));
+    $("#h11 .text-input").val(localStorage.getItem("hour11"));
+    $("#h12 .text-input").val(localStorage.getItem("hour12"));
+    $("#h13 .text-input").val(localStorage.getItem("hour13"));
+    $("#h14 .text-input").val(localStorage.getItem("hour14"));
+    $("#h15 .text-input").val(localStorage.getItem("hour15"));
+    $("#h16 .text-input").val(localStorage.getItem("hour16"));
+    $("#h17 .text-input").val(localStorage.getItem("hour17"));
+    $("#h18 .text-input").val(localStorage.getItem("hour18"));
+    console.log(this);
  */
