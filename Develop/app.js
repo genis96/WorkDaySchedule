@@ -11,6 +11,12 @@ $("#currTime").append(currTime);
 let now = new Date().getHours();
 
 
+function colorChanges() {
+
+    console.log(this)
+}
+
+
 /**
  * use moment.js for time and date 
  * grab selectors from html 
