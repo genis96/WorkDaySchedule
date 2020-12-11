@@ -1,6 +1,6 @@
 # WorkDaySchedule
 
--> add screenshot 
+add screenshot 
 create a functioning schedule 
 
 ![Screenshot](WorkDayScheduler.png)
