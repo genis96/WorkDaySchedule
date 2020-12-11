@@ -1,5 +1,13 @@
   window.onload = () => { 
-    timeAmPm();
+    eightAm();
+    nineAm();
+    tenAm();
+    elevenAm();
+    twelveAm();
+    onePm();
+    twoPm();
+    threePm();
+    fourPm();
     colorChanges();
 }
 
@@ -79,23 +87,38 @@ function colorChanges() {
     console.log(this)
 }
 
-function timeAmPm() {
+function eightAm() {
     // test this out to see if i can label them all under one ID 
     let userInput = document.querySelector('#text-input-8');
     let userOutput = document.querySelector('#text-input-8');
-    let saveBtn = document.querySelector('#tmainBtn');
+    let saveBtn = document.querySelector('#btn8');
     
     $(saveBtn).on("click", updateUI);
+    userOutput.textContent = localStorage.getItem("content");
+    userInput.value = localStorage.getItem("content");
+    
     function updateUI() {
-        localStorage.setItem("content", userInput.val);
-        userOutput.textContent = userInput.val;
+        localStorage.setItem("content", userInput.value);
+        userOutput.textContent = userInput.value;
     }
 
-    userOutput.text = localStorage.getItem("content");
-    userInput.val = localStorage.getItem("content");
-    
 }
 
+function nineAm() {
+  let userInput2 = document.querySelector("#text-input-9");
+  let userOutput2 = document.querySelector("#text-input-9");
+  let saveBtn2 = document.querySelector("#btn9");
+
+  $(saveBtn2).on("click", updateUI2);
+
+  userOutput2.textContent = localStorage.getItem("content2");
+  userInput2.value = localStorage.getItem("content2");
+
+  function updateUI2() {
+    localStorage.setItem("content2", userInput2.value);
+    userOutput2.textContent = userInput2.value;
+    }
+}
 
 
 
