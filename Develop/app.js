@@ -11,9 +11,9 @@
     colorChanges();
 }
 
-var currentDay = moment().format("dddd LL");
+let currentDay = moment().format("dddd LL");
 $("#currentDay").append(currentDay);
-var currTime = moment().format("LT");
+let currTime = moment().format("LT");
 $("#currTime").append(currTime);
 
 let now = new Date().getHours();
@@ -88,7 +88,6 @@ function colorChanges() {
 }
 
 function eightAm() {
-    // test this out to see if i can label them all under one ID 
     let userInput = document.querySelector('#text-input-8');
     let userOutput = document.querySelector('#text-input-8');
     let saveBtn = document.querySelector('#btn8');
