@@ -17,17 +17,17 @@ let currTime = moment().format("LT");
 $("#currTime").append(currTime);
 
 let now = new Date().getHours();
-// if (now > x) {
-//     $("#mainBtn").addClass("past");
-//   } else if (now >= x && now < x) {
-//     $("#mainBtn").addClass("present");
-//   } else if (now < x) {
-//     $("#mainBtn").addClass("future");
-//   }
 
 function colorChanges() {
-    //can i store the nums in a let & just use an if statement once..?
-    // let x = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
+  //can i store the nums in a let & just use an if statement once..?
+  // let x = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
+      // if (now > x) {
+      //     $("#mainBtn").addClass("past");
+      //   } else if (now >= x && now < x) {
+      //     $("#mainBtn").addClass("present");
+      //   } else if (now < x) {
+      //     $("#mainBtn").addClass("future");
+      //   }
     if (now > 8) {
         $("#btn8").addClass("past");
       } else if (now >= 8 && now < 9) {
@@ -86,6 +86,7 @@ function colorChanges() {
       }
     console.log(this)
 }
+console.log(this)
 
 function eightAm() {
     let userInput = document.querySelector('#text-input-8');
@@ -116,7 +117,7 @@ function nineAm() {
   function updateUI2() {
     localStorage.setItem("content2", userInput2.value);
     userOutput2.textContent = userInput2.value;
-    }
+  }
 }
 
 function tenAm() {
