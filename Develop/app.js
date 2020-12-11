@@ -120,6 +120,112 @@ function nineAm() {
     }
 }
 
+function tenAm() {
+  let userInput3 = document.querySelector("#text-input-10");
+  let userOutput3 = document.querySelector("#text-input-10");
+  let saveBtn3 = document.querySelector("#btn9");
+
+  $(saveBtn3).on("click", updateUI3);
+
+  userOutput3.textContent = localStorage.getItem("content3");
+  userInput3.value = localStorage.getItem("content3");
+
+  function updateUI3() {
+    localStorage.setItem("content3", userInput3.value);
+    userOutput2.textContent = userInput3.value;
+    }
+}
+function elevenAm() {
+  let userInput4 = document.querySelector("#text-input-11");
+  let userOutput4 = document.querySelector("#text-input-11");
+  let saveBtn4 = document.querySelector("#btn11");
+
+  $(saveBtn4).on("click", updateUI4);
+
+  userOutput4.textContent = localStorage.getItem("content4");
+  userInput4.value = localStorage.getItem("content4");
+
+  function updateUI4() {
+    localStorage.setItem("content4", userInput4.value);
+    userOutput4.textContent = userInput4.value;
+    }
+}
+function twelveAm() {
+  let userInput5 = document.querySelector("#text-input-12");
+  let userOutput5 = document.querySelector("#text-input-12");
+  let saveBtn5 = document.querySelector("#btn9");
+
+  $(saveBtn5).on("click", updateUI5);
+
+  userOutput5.textContent = localStorage.getItem("content5");
+  userInput5.value = localStorage.getItem("content5");
+
+  function updateUI5() {
+    localStorage.setItem("content5", userInput5.value);
+    userOutput5.textContent = userInput5.value;
+    }
+}
+
+function onePm() {
+  let userInput6 = document.querySelector("#text-input-1");
+  let userOutput6 = document.querySelector("#text-input-1");
+  let saveBtn6 = document.querySelector("#btn1");
+
+  $(saveBtn6).on("click", updateUI6);
+
+  userOutput6.textContent = localStorage.getItem("content6");
+  userInput6.value = localStorage.getItem("content6");
+
+  function updateUI6() {
+    localStorage.setItem("content6", userInput6.value);
+    userOutput6.textContent = userInput6.value;
+    }
+}
+function twoPm() {
+  let userInput7 = document.querySelector("#text-input-2");
+  let userOutput7 = document.querySelector("#text-input-2");
+  let saveBtn7 = document.querySelector("#btn2");
+
+  $(saveBtn7).on("click", updateUI7);
+
+  userOutput7.textContent = localStorage.getItem("content3");
+  userInput7.value = localStorage.getItem("content7");
+
+  function updateUI7() {
+    localStorage.setItem("content2", userInput7.value);
+    userOutput7.textContent = userInput7.value;
+    }
+}
+function threePm() {
+  let userInput8 = document.querySelector("#text-input-3");
+  let userOutput8 = document.querySelector("#text-input-3");
+  let saveBtn8 = document.querySelector("#btn3");
+
+  $(saveBtn8).on("click", updateUI8);
+
+  userOutput8.textContent = localStorage.getItem("content3");
+  userInput8.value = localStorage.getItem("content8");
+
+  function updateUI8() {
+    localStorage.setItem("content2", userInput8.value);
+    userOutput8.textContent = userInput8.value;
+    }
+}
+function fourPm() {
+  let userInput9 = document.querySelector("#text-input-4");
+  let userOutput9 = document.querySelector("#text-input-4");
+  let saveBtn9 = document.querySelector("#btn4");
+
+  $(saveBtn9).on("click", updateUI9);
+
+  userOutput9.textContent = localStorage.getItem("content3");
+  userInput9.value = localStorage.getItem("content9");
+
+  function updateUI9() {
+    localStorage.setItem("content2", userInput9.value);
+    userOutput9.textContent = userInput9.value;
+    }
+}
 
 
 /**
